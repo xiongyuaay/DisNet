@@ -43,32 +43,34 @@ if __name__ == '__main__':
     torch.set_num_threads(args.threads)
 
     
-    model = model.Generator(args)    
+    model = model.DisNet(args)    
 
     model.eval()
     model.to(device)
+    
+    idx = 17
 
     # img = Image.open("/opt/data/private/ELAN_total/SR_datasets/DIV2K/DIV2K_test_LR_bicubic/X4/0901x4.png")
-    img = Image.open("E:/SR_datasets/DIV2K/DIV2K_test_LR_bicubic/X4/0917x4.png")
+    img = Image.open("E:/SR_datasets/DIV2K/DIV2K_test_LR_bicubic/X4/09{}x4.png".format(idx))
 
     print(type(img))
     img = torch.from_numpy(np.array(img)).permute(2, 0, 1).float()/255.0
     
-    save_image(img, os.path.join(out_path, "input17.png"))
+    save_image(img, os.path.join(out_path, "input{}.png".format(idx)))
     c, h, w = img.shape
     img = torch.reshape(img, [1, c, h, w])
     img = img.to(device)
     print(img.shape)
 
-    if os.path.exists('./train_prior/model_checkpoint99.pth'):
-        checkpoint = torch.load('./train_prior/model_checkpoint99.pth')
+    if os.path.exists('./train_prior/model_checkpoint19.pth'):
+        checkpoint = torch.load('./train_prior/model_checkpoint19.pth')
         model.load_state_dict(checkpoint['model_state_dict'])
         
     output = model(img)
 
-    print(output)
+    print(output.shape)
     
     # 显示模型的总结信息
     num_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"模型的参数量: {num_params}")
-    save_image(output, os.path.join(out_path, "output17.png"))
+    save_image(output, os.path.join(out_path, "output{}.png".format(idx)))
