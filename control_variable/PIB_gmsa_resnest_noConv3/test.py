@@ -62,8 +62,8 @@ if __name__ == '__main__':
     img = img.to(device)
     print(img.shape)
 
-    if os.path.exists('./train_iiw/model_checkpoint17.pth'):
-        checkpoint = torch.load('./train_iiw/model_checkpoint17.pth')
+    if os.path.exists('./train_prior/model_checkpoint19.pth'):
+        checkpoint = torch.load('./train_prior/model_checkpoint19.pth')
         model.load_state_dict(checkpoint['model_state_dict'])
         
     output = model(img)
