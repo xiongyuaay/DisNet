@@ -62,8 +62,8 @@ if __name__ == '__main__':
     img = img.to(device)
     print(img.shape)
 
-    if os.path.exists('./train_iiw/model_checkpoint9.pth'):
-        checkpoint = torch.load('./train_iiw/model_checkpoint9.pth')
+    if os.path.exists('./train_iiw/model_checkpoint32.pth'):
+        checkpoint = torch.load('./train_iiw/model_checkpoint32.pth')
         model.load_state_dict(checkpoint['model_state_dict'])
         
     output = model(img)
@@ -73,4 +73,4 @@ if __name__ == '__main__':
     # 显示模型的总结信息
     num_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"模型的参数量: {num_params}")
-    save_image(output, os.path.join(out_path, "outputpib{}.png".format(idx)))
+    save_image(output, os.path.join(out_path, "output32pib{}.png".format(idx)))

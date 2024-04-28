@@ -48,7 +48,7 @@ if __name__ == '__main__':
     model.eval()
     model.to(device)
     
-    idx = 27
+    idx = 17
 
     # img = Image.open("/opt/data/private/ELAN_total/SR_datasets/DIV2K/DIV2K_test_LR_bicubic/X4/0901x4.png")
     img = Image.open("E:/SR_datasets/DIV2K/DIV2K_test_LR_bicubic/X4/09{}x4.png".format(idx))
@@ -62,8 +62,8 @@ if __name__ == '__main__':
     img = img.to(device)
     print(img.shape)
 
-    if os.path.exists('./train_iiw/model_checkpoint114.pth'):
-        checkpoint = torch.load('./train_iiw/model_checkpoint114.pth')
+    if os.path.exists('./train_iiw/model_checkpoint165.pth'):
+        checkpoint = torch.load('./train_iiw/model_checkpoint165.pth')
         model.load_state_dict(checkpoint['model_state_dict'])
         
     output = model(img)
@@ -73,4 +73,4 @@ if __name__ == '__main__':
     # 显示模型的总结信息
     num_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"模型的参数量: {num_params}")
-    save_image(output, os.path.join(out_path, "outputpib{}.png".format(idx)))
+    save_image(output, os.path.join(out_path, "output165pib{}.png".format(idx)))
