@@ -1,0 +1,769 @@
+[2024-04-16 11:06:31,851][train_withPIB.py][line:85][INFO] Generator(
+  (conv1): Conv2d(3, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (trunk): Sequential(
+    (0): ResidualResidualDenseBlock(
+      (rdb1): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb2): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb3): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+    )
+    (1): ResidualResidualDenseBlock(
+      (rdb1): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb2): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb3): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+    )
+    (2): ResidualResidualDenseBlock(
+      (rdb1): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb2): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb3): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+    )
+    (3): ResidualResidualDenseBlock(
+      (rdb1): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb2): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb3): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+    )
+    (4): ResidualResidualDenseBlock(
+      (rdb1): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb2): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb3): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+    )
+    (5): ResidualResidualDenseBlock(
+      (rdb1): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb2): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb3): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+    )
+    (6): ResidualResidualDenseBlock(
+      (rdb1): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb2): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb3): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+    )
+    (7): ResidualResidualDenseBlock(
+      (rdb1): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb2): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb3): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+    )
+    (8): ResidualResidualDenseBlock(
+      (rdb1): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb2): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb3): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+    )
+    (9): ResidualResidualDenseBlock(
+      (rdb1): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb2): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb3): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+    )
+    (10): ResidualResidualDenseBlock(
+      (rdb1): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb2): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb3): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+    )
+    (11): ResidualResidualDenseBlock(
+      (rdb1): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb2): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+      (rdb3): ResidualDenseBlock(
+        (conv1): Conv2d(60, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv2): Conv2d(90, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv3): Conv2d(120, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv4): Conv2d(150, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (conv5): Conv2d(180, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (leaky_relu): LeakyReLU(negative_slope=0.2, inplace=True)
+        (identity): Identity()
+      )
+    )
+  )
+  (conv2): Conv2d(60, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (upsampling): Sequential(
+    (0): Conv2d(60, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): LeakyReLU(negative_slope=0.2, inplace=True)
+  )
+  (conv3): Sequential(
+    (0): Conv2d(60, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): LeakyReLU(negative_slope=0.2, inplace=True)
+  )
+  (conv4): Conv2d(60, 3, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+)
+[2024-04-16 11:06:37,817][pib_utils.py][line:281][INFO] ##===========pib-training=============##
+[2024-04-16 11:06:48,461][pib_utils.py][line:321][INFO] Epoch:000, 00160/64000, loss: 38.7067, time: 10.641, lr: 0.0002
+[2024-04-16 11:06:53,411][pib_utils.py][line:321][INFO] Epoch:000, 00320/64000, loss: 38.5804, time: 4.950, lr: 0.0002
+[2024-04-16 11:06:58,419][pib_utils.py][line:321][INFO] Epoch:000, 00480/64000, loss: 42.3465, time: 5.008, lr: 0.0002
+[2024-04-16 11:07:03,393][pib_utils.py][line:321][INFO] Epoch:000, 00640/64000, loss: 41.3008, time: 4.975, lr: 0.0002
+[2024-04-16 11:07:08,451][pib_utils.py][line:321][INFO] Epoch:000, 00800/64000, loss: 37.8622, time: 5.057, lr: 0.0002
+[2024-04-16 11:07:13,460][pib_utils.py][line:321][INFO] Epoch:000, 00960/64000, loss: 36.8603, time: 5.009, lr: 0.0002
+[2024-04-16 11:07:18,492][pib_utils.py][line:321][INFO] Epoch:000, 01120/64000, loss: 34.8748, time: 5.032, lr: 0.0002
+[2024-04-16 11:07:23,534][pib_utils.py][line:321][INFO] Epoch:000, 01280/64000, loss: 33.4994, time: 5.042, lr: 0.0002
+[2024-04-16 11:07:28,628][pib_utils.py][line:321][INFO] Epoch:000, 01440/64000, loss: 31.5939, time: 5.094, lr: 0.0002
+[2024-04-16 11:07:33,730][pib_utils.py][line:321][INFO] Epoch:000, 01600/64000, loss: 30.1246, time: 5.102, lr: 0.0002
+[2024-04-16 11:07:38,848][pib_utils.py][line:321][INFO] Epoch:000, 01760/64000, loss: 29.5986, time: 5.118, lr: 0.0002
+[2024-04-16 11:07:43,964][pib_utils.py][line:321][INFO] Epoch:000, 01920/64000, loss: 28.5714, time: 5.116, lr: 0.0002
+[2024-04-16 11:07:49,209][pib_utils.py][line:321][INFO] Epoch:000, 02080/64000, loss: 27.7974, time: 5.245, lr: 0.0002
+[2024-04-16 11:07:54,330][pib_utils.py][line:321][INFO] Epoch:000, 02240/64000, loss: 26.9171, time: 5.120, lr: 0.0002
+[2024-04-16 11:07:59,450][pib_utils.py][line:321][INFO] Epoch:000, 02400/64000, loss: 25.9674, time: 5.120, lr: 0.0002
+[2024-04-16 11:08:04,548][pib_utils.py][line:321][INFO] Epoch:000, 02560/64000, loss: 25.1770, time: 5.098, lr: 0.0002
+[2024-04-16 11:08:09,811][pib_utils.py][line:321][INFO] Epoch:000, 02720/64000, loss: 24.3245, time: 5.263, lr: 0.0002
+[2024-04-16 11:08:15,062][pib_utils.py][line:321][INFO] Epoch:000, 02880/64000, loss: 23.6538, time: 5.251, lr: 0.0002
+[2024-04-16 11:08:20,248][pib_utils.py][line:321][INFO] Epoch:000, 03040/64000, loss: 22.9429, time: 5.185, lr: 0.0002
+[2024-04-16 11:08:25,345][pib_utils.py][line:321][INFO] Epoch:000, 03200/64000, loss: 22.3658, time: 5.097, lr: 0.0002
+[2024-04-16 11:08:30,533][pib_utils.py][line:321][INFO] Epoch:000, 03360/64000, loss: 21.8777, time: 5.189, lr: 0.0002
+[2024-04-16 11:08:35,622][pib_utils.py][line:321][INFO] Epoch:000, 03520/64000, loss: 21.5346, time: 5.088, lr: 0.0002
+[2024-04-16 11:08:40,845][pib_utils.py][line:321][INFO] Epoch:000, 03680/64000, loss: 21.0292, time: 5.223, lr: 0.0002
+[2024-04-16 11:08:45,941][pib_utils.py][line:321][INFO] Epoch:000, 03840/64000, loss: 20.6793, time: 5.096, lr: 0.0002
+[2024-04-16 11:08:51,148][pib_utils.py][line:321][INFO] Epoch:000, 04000/64000, loss: 20.6522, time: 5.207, lr: 0.0002
+[2024-04-16 11:08:56,269][pib_utils.py][line:321][INFO] Epoch:000, 04160/64000, loss: 20.5639, time: 5.121, lr: 0.0002
+[2024-04-16 11:09:01,505][pib_utils.py][line:321][INFO] Epoch:000, 04320/64000, loss: 20.4330, time: 5.237, lr: 0.0002
+[2024-04-16 11:09:06,681][pib_utils.py][line:321][INFO] Epoch:000, 04480/64000, loss: 20.2641, time: 5.176, lr: 0.0002
+[2024-04-16 11:09:11,790][pib_utils.py][line:321][INFO] Epoch:000, 04640/64000, loss: 19.9937, time: 5.109, lr: 0.0002
+[2024-04-16 11:09:16,900][pib_utils.py][line:321][INFO] Epoch:000, 04800/64000, loss: 19.7211, time: 5.109, lr: 0.0002
+[2024-04-16 11:09:22,038][pib_utils.py][line:321][INFO] Epoch:000, 04960/64000, loss: 19.4508, time: 5.139, lr: 0.0002
+[2024-04-16 11:09:27,288][pib_utils.py][line:321][INFO] Epoch:000, 05120/64000, loss: 19.1562, time: 5.250, lr: 0.0002
+[2024-04-16 11:09:32,422][pib_utils.py][line:321][INFO] Epoch:000, 05280/64000, loss: 18.9196, time: 5.134, lr: 0.0002
+[2024-04-16 11:09:37,559][pib_utils.py][line:321][INFO] Epoch:000, 05440/64000, loss: 18.9295, time: 5.136, lr: 0.0002
+[2024-04-16 11:09:42,711][pib_utils.py][line:321][INFO] Epoch:000, 05600/64000, loss: 18.7813, time: 5.152, lr: 0.0002
+[2024-04-16 11:09:48,137][pib_utils.py][line:321][INFO] Epoch:000, 05760/64000, loss: 18.5849, time: 5.426, lr: 0.0002
+[2024-04-16 11:09:53,379][pib_utils.py][line:321][INFO] Epoch:000, 05920/64000, loss: 18.3590, time: 5.242, lr: 0.0002
+[2024-04-16 11:09:58,563][pib_utils.py][line:321][INFO] Epoch:000, 06080/64000, loss: 18.2153, time: 5.184, lr: 0.0002
+[2024-04-16 11:10:03,685][pib_utils.py][line:321][INFO] Epoch:000, 06240/64000, loss: 18.2134, time: 5.122, lr: 0.0002
+[2024-04-16 11:10:08,925][pib_utils.py][line:321][INFO] Epoch:000, 06400/64000, loss: 18.1346, time: 5.239, lr: 0.0002
+[2024-04-16 11:10:14,157][pib_utils.py][line:321][INFO] Epoch:000, 06560/64000, loss: 18.0416, time: 5.232, lr: 0.0002
+[2024-04-16 11:10:19,343][pib_utils.py][line:321][INFO] Epoch:000, 06720/64000, loss: 17.8656, time: 5.186, lr: 0.0002
+[2024-04-16 11:10:24,442][pib_utils.py][line:321][INFO] Epoch:000, 06880/64000, loss: 17.7692, time: 5.099, lr: 0.0002
+[2024-04-16 11:10:29,613][pib_utils.py][line:321][INFO] Epoch:000, 07040/64000, loss: 17.5817, time: 5.171, lr: 0.0002
+[2024-04-16 11:10:34,751][pib_utils.py][line:321][INFO] Epoch:000, 07200/64000, loss: 17.4320, time: 5.138, lr: 0.0002
+[2024-04-16 11:10:39,900][pib_utils.py][line:321][INFO] Epoch:000, 07360/64000, loss: 17.2548, time: 5.149, lr: 0.0002
+[2024-04-16 11:10:45,044][pib_utils.py][line:321][INFO] Epoch:000, 07520/64000, loss: 17.2148, time: 5.144, lr: 0.0002
+[2024-04-16 11:10:50,197][pib_utils.py][line:321][INFO] Epoch:000, 07680/64000, loss: 17.1725, time: 5.153, lr: 0.0002
+[2024-04-16 11:10:55,504][pib_utils.py][line:321][INFO] Epoch:000, 07840/64000, loss: 17.0218, time: 5.307, lr: 0.0002
+[2024-04-16 11:11:00,706][pib_utils.py][line:321][INFO] Epoch:000, 08000/64000, loss: 16.9636, time: 5.202, lr: 0.0002
+[2024-04-16 11:11:05,855][pib_utils.py][line:321][INFO] Epoch:000, 08160/64000, loss: 17.0072, time: 5.148, lr: 0.0002
+[2024-04-16 11:11:11,013][pib_utils.py][line:321][INFO] Epoch:000, 08320/64000, loss: 17.0536, time: 5.158, lr: 0.0002
+[2024-04-16 11:11:16,312][pib_utils.py][line:321][INFO] Epoch:000, 08480/64000, loss: 17.1324, time: 5.300, lr: 0.0002
+[2024-04-16 11:11:21,496][pib_utils.py][line:321][INFO] Epoch:000, 08640/64000, loss: 17.1024, time: 5.184, lr: 0.0002
+[2024-04-16 11:11:26,638][pib_utils.py][line:321][INFO] Epoch:000, 08800/64000, loss: 17.0331, time: 5.142, lr: 0.0002
+[2024-04-16 11:11:31,733][pib_utils.py][line:321][INFO] Epoch:000, 08960/64000, loss: 16.9960, time: 5.095, lr: 0.0002
+[2024-04-16 11:11:36,956][pib_utils.py][line:321][INFO] Epoch:000, 09120/64000, loss: 16.9802, time: 5.223, lr: 0.0002
+[2024-04-16 11:11:42,107][pib_utils.py][line:321][INFO] Epoch:000, 09280/64000, loss: 16.9205, time: 5.151, lr: 0.0002
+[2024-04-16 11:11:47,188][pib_utils.py][line:321][INFO] Epoch:000, 09440/64000, loss: 16.8751, time: 5.082, lr: 0.0002
+[2024-04-16 11:11:52,470][pib_utils.py][line:321][INFO] Epoch:000, 09600/64000, loss: 16.8636, time: 5.282, lr: 0.0002
+[2024-04-16 11:11:57,686][pib_utils.py][line:321][INFO] Epoch:000, 09760/64000, loss: 16.8389, time: 5.215, lr: 0.0002
+[2024-04-16 11:12:02,812][pib_utils.py][line:321][INFO] Epoch:000, 09920/64000, loss: 16.8756, time: 5.126, lr: 0.0002
+[2024-04-16 11:12:08,003][pib_utils.py][line:321][INFO] Epoch:000, 10080/64000, loss: 16.8805, time: 5.191, lr: 0.0002
+[2024-04-16 11:12:13,141][pib_utils.py][line:321][INFO] Epoch:000, 10240/64000, loss: 16.8206, time: 5.139, lr: 0.0002
+[2024-04-16 11:12:18,346][pib_utils.py][line:321][INFO] Epoch:000, 10400/64000, loss: 16.7622, time: 5.205, lr: 0.0002
+[2024-04-16 11:12:23,713][pib_utils.py][line:321][INFO] Epoch:000, 10560/64000, loss: 16.6969, time: 5.367, lr: 0.0002
+[2024-04-16 11:12:29,041][pib_utils.py][line:321][INFO] Epoch:000, 10720/64000, loss: 16.6850, time: 5.328, lr: 0.0002
+[2024-04-16 11:12:34,220][pib_utils.py][line:321][INFO] Epoch:000, 10880/64000, loss: 16.6335, time: 5.179, lr: 0.0002
+[2024-04-16 11:12:39,396][pib_utils.py][line:321][INFO] Epoch:000, 11040/64000, loss: 16.5552, time: 5.176, lr: 0.0002
+[2024-04-16 11:12:44,735][pib_utils.py][line:321][INFO] Epoch:000, 11200/64000, loss: 16.4967, time: 5.339, lr: 0.0002
+[2024-04-16 11:12:49,871][pib_utils.py][line:321][INFO] Epoch:000, 11360/64000, loss: 16.3920, time: 5.135, lr: 0.0002
+[2024-04-16 11:12:55,096][pib_utils.py][line:321][INFO] Epoch:000, 11520/64000, loss: 16.3139, time: 5.225, lr: 0.0002
+[2024-04-16 11:13:00,223][pib_utils.py][line:321][INFO] Epoch:000, 11680/64000, loss: 16.2423, time: 5.128, lr: 0.0002
+[2024-04-16 11:13:05,391][pib_utils.py][line:321][INFO] Epoch:000, 11840/64000, loss: 16.1643, time: 5.167, lr: 0.0002
+[2024-04-16 11:13:10,559][pib_utils.py][line:321][INFO] Epoch:000, 12000/64000, loss: 16.0851, time: 5.168, lr: 0.0002
+[2024-04-16 11:13:15,940][pib_utils.py][line:321][INFO] Epoch:000, 12160/64000, loss: 16.0053, time: 5.381, lr: 0.0002
+[2024-04-16 11:13:21,127][pib_utils.py][line:321][INFO] Epoch:000, 12320/64000, loss: 15.9577, time: 5.187, lr: 0.0002
+[2024-04-16 11:13:26,318][pib_utils.py][line:321][INFO] Epoch:000, 12480/64000, loss: 15.9280, time: 5.192, lr: 0.0002
+[2024-04-16 11:13:31,451][pib_utils.py][line:321][INFO] Epoch:000, 12640/64000, loss: 15.8733, time: 5.133, lr: 0.0002
+[2024-04-16 11:13:36,813][pib_utils.py][line:321][INFO] Epoch:000, 12800/64000, loss: 15.8070, time: 5.361, lr: 0.0002
+[2024-04-16 11:13:42,042][pib_utils.py][line:321][INFO] Epoch:000, 12960/64000, loss: 15.7630, time: 5.230, lr: 0.0002
+[2024-04-16 11:13:47,156][pib_utils.py][line:321][INFO] Epoch:000, 13120/64000, loss: 15.7195, time: 5.113, lr: 0.0002
+[2024-04-16 11:13:52,342][pib_utils.py][line:321][INFO] Epoch:000, 13280/64000, loss: 15.6791, time: 5.186, lr: 0.0002
+[2024-04-16 11:13:57,502][pib_utils.py][line:321][INFO] Epoch:000, 13440/64000, loss: 15.6198, time: 5.161, lr: 0.0002
+[2024-04-16 11:14:02,687][pib_utils.py][line:321][INFO] Epoch:000, 13600/64000, loss: 15.5946, time: 5.185, lr: 0.0002
+[2024-04-16 11:14:07,834][pib_utils.py][line:321][INFO] Epoch:000, 13760/64000, loss: 15.5391, time: 5.147, lr: 0.0002
+[2024-04-16 11:14:13,023][pib_utils.py][line:321][INFO] Epoch:000, 13920/64000, loss: 15.4636, time: 5.189, lr: 0.0002
+[2024-04-16 11:14:18,159][pib_utils.py][line:321][INFO] Epoch:000, 14080/64000, loss: 15.4013, time: 5.135, lr: 0.0002
+[2024-04-16 11:14:23,315][pib_utils.py][line:321][INFO] Epoch:000, 14240/64000, loss: 15.3251, time: 5.157, lr: 0.0002
+[2024-04-16 11:14:28,479][pib_utils.py][line:321][INFO] Epoch:000, 14400/64000, loss: 15.2705, time: 5.163, lr: 0.0002
+[2024-04-16 11:14:33,685][pib_utils.py][line:321][INFO] Epoch:000, 14560/64000, loss: 15.2081, time: 5.206, lr: 0.0002
+[2024-04-16 11:14:38,820][pib_utils.py][line:321][INFO] Epoch:000, 14720/64000, loss: 15.1470, time: 5.135, lr: 0.0002
+[2024-04-16 11:14:44,032][pib_utils.py][line:321][INFO] Epoch:000, 14880/64000, loss: 15.1881, time: 5.212, lr: 0.0002
+[2024-04-16 11:14:49,156][pib_utils.py][line:321][INFO] Epoch:000, 15040/64000, loss: 15.1621, time: 5.124, lr: 0.0002
+[2024-04-16 11:14:54,297][pib_utils.py][line:321][INFO] Epoch:000, 15200/64000, loss: 15.0982, time: 5.141, lr: 0.0002
+[2024-04-16 11:14:59,525][pib_utils.py][line:321][INFO] Epoch:000, 15360/64000, loss: 15.0232, time: 5.228, lr: 0.0002
+[2024-04-16 11:15:04,667][pib_utils.py][line:321][INFO] Epoch:000, 15520/64000, loss: 14.9647, time: 5.142, lr: 0.0002
+[2024-04-16 11:15:09,787][pib_utils.py][line:321][INFO] Epoch:000, 15680/64000, loss: 14.9252, time: 5.120, lr: 0.0002
+[2024-04-16 11:15:15,040][pib_utils.py][line:321][INFO] Epoch:000, 15840/64000, loss: 14.8731, time: 5.252, lr: 0.0002
+[2024-04-16 11:15:20,284][pib_utils.py][line:321][INFO] Epoch:000, 16000/64000, loss: 14.8344, time: 5.245, lr: 0.0002
+[2024-04-16 11:15:25,543][pib_utils.py][line:321][INFO] Epoch:000, 16160/64000, loss: 14.8002, time: 5.259, lr: 0.0002
+[2024-04-16 11:15:30,809][pib_utils.py][line:321][INFO] Epoch:000, 16320/64000, loss: 14.7504, time: 5.266, lr: 0.0002
+[2024-04-16 11:15:35,978][pib_utils.py][line:321][INFO] Epoch:000, 16480/64000, loss: 14.7005, time: 5.168, lr: 0.0002
+[2024-04-16 11:15:41,310][pib_utils.py][line:321][INFO] Epoch:000, 16640/64000, loss: 14.6610, time: 5.332, lr: 0.0002
+[2024-04-16 11:15:46,412][pib_utils.py][line:321][INFO] Epoch:000, 16800/64000, loss: 14.6042, time: 5.103, lr: 0.0002
+[2024-04-16 11:15:51,552][pib_utils.py][line:321][INFO] Epoch:000, 16960/64000, loss: 14.5371, time: 5.140, lr: 0.0002
+[2024-04-16 11:15:56,638][pib_utils.py][line:321][INFO] Epoch:000, 17120/64000, loss: 14.4798, time: 5.086, lr: 0.0002
+[2024-04-16 11:16:01,912][pib_utils.py][line:321][INFO] Epoch:000, 17280/64000, loss: 14.4569, time: 5.273, lr: 0.0002
+[2024-04-16 11:16:07,067][pib_utils.py][line:321][INFO] Epoch:000, 17440/64000, loss: 14.4789, time: 5.156, lr: 0.0002
+[2024-04-16 11:16:12,221][pib_utils.py][line:321][INFO] Epoch:000, 17600/64000, loss: 14.4366, time: 5.154, lr: 0.0002
+[2024-04-16 11:16:17,330][pib_utils.py][line:321][INFO] Epoch:000, 17760/64000, loss: 14.3809, time: 5.109, lr: 0.0002
+[2024-04-16 11:16:22,519][pib_utils.py][line:321][INFO] Epoch:000, 17920/64000, loss: 14.3495, time: 5.189, lr: 0.0002
+[2024-04-16 11:16:27,807][pib_utils.py][line:321][INFO] Epoch:000, 18080/64000, loss: 14.3447, time: 5.288, lr: 0.0002
+[2024-04-16 11:16:32,948][pib_utils.py][line:321][INFO] Epoch:000, 18240/64000, loss: 14.3270, time: 5.141, lr: 0.0002
+[2024-04-16 11:16:38,154][pib_utils.py][line:321][INFO] Epoch:000, 18400/64000, loss: 14.3001, time: 5.206, lr: 0.0002
+[2024-04-16 11:16:43,297][pib_utils.py][line:321][INFO] Epoch:000, 18560/64000, loss: 14.2832, time: 5.143, lr: 0.0002
+[2024-04-16 11:16:48,460][pib_utils.py][line:321][INFO] Epoch:000, 18720/64000, loss: 14.2496, time: 5.163, lr: 0.0002
+[2024-04-16 11:16:53,601][pib_utils.py][line:321][INFO] Epoch:000, 18880/64000, loss: 14.2147, time: 5.141, lr: 0.0002
+[2024-04-16 11:16:58,723][pib_utils.py][line:321][INFO] Epoch:000, 19040/64000, loss: 14.1907, time: 5.122, lr: 0.0002
+[2024-04-16 11:17:03,935][pib_utils.py][line:321][INFO] Epoch:000, 19200/64000, loss: 14.1653, time: 5.212, lr: 0.0002
+[2024-04-16 11:17:09,125][pib_utils.py][line:321][INFO] Epoch:000, 19360/64000, loss: 14.1571, time: 5.191, lr: 0.0002
+[2024-04-16 11:17:14,429][pib_utils.py][line:321][INFO] Epoch:000, 19520/64000, loss: 14.1688, time: 5.304, lr: 0.0002
+[2024-04-16 11:17:19,656][pib_utils.py][line:321][INFO] Epoch:000, 19680/64000, loss: 14.1496, time: 5.227, lr: 0.0002
+[2024-04-16 11:17:24,776][pib_utils.py][line:321][INFO] Epoch:000, 19840/64000, loss: 14.1208, time: 5.120, lr: 0.0002
+[2024-04-16 11:17:29,961][pib_utils.py][line:321][INFO] Epoch:000, 20000/64000, loss: 14.0826, time: 5.185, lr: 0.0002
+[2024-04-16 11:17:35,048][pib_utils.py][line:321][INFO] Epoch:000, 20160/64000, loss: 14.0445, time: 5.088, lr: 0.0002
+[2024-04-16 11:17:40,207][pib_utils.py][line:321][INFO] Epoch:000, 20320/64000, loss: 14.0060, time: 5.158, lr: 0.0002
+[2024-04-16 11:17:45,416][pib_utils.py][line:321][INFO] Epoch:000, 20480/64000, loss: 13.9729, time: 5.209, lr: 0.0002
+[2024-04-16 11:17:50,597][pib_utils.py][line:321][INFO] Epoch:000, 20640/64000, loss: 13.9264, time: 5.181, lr: 0.0002
+[2024-04-16 11:17:55,898][pib_utils.py][line:321][INFO] Epoch:000, 20800/64000, loss: 13.8811, time: 5.302, lr: 0.0002
+[2024-04-16 11:18:01,104][pib_utils.py][line:321][INFO] Epoch:000, 20960/64000, loss: 13.8418, time: 5.206, lr: 0.0002
+[2024-04-16 11:18:06,269][pib_utils.py][line:321][INFO] Epoch:000, 21120/64000, loss: 13.7969, time: 5.166, lr: 0.0002
+[2024-04-16 11:18:11,480][pib_utils.py][line:321][INFO] Epoch:000, 21280/64000, loss: 13.8091, time: 5.211, lr: 0.0002
+[2024-04-16 11:18:16,770][pib_utils.py][line:321][INFO] Epoch:000, 21440/64000, loss: 13.8545, time: 5.290, lr: 0.0002
+[2024-04-16 11:18:21,879][pib_utils.py][line:321][INFO] Epoch:000, 21600/64000, loss: 13.8460, time: 5.109, lr: 0.0002
+[2024-04-16 11:18:26,991][pib_utils.py][line:321][INFO] Epoch:000, 21760/64000, loss: 13.8354, time: 5.111, lr: 0.0002
+[2024-04-16 11:18:32,098][pib_utils.py][line:321][INFO] Epoch:000, 21920/64000, loss: 13.8096, time: 5.107, lr: 0.0002
+[2024-04-16 11:18:37,218][pib_utils.py][line:321][INFO] Epoch:000, 22080/64000, loss: 13.7741, time: 5.121, lr: 0.0002
+[2024-04-16 11:18:42,346][pib_utils.py][line:321][INFO] Epoch:000, 22240/64000, loss: 13.7484, time: 5.128, lr: 0.0002
+[2024-04-16 11:18:47,449][pib_utils.py][line:321][INFO] Epoch:000, 22400/64000, loss: 13.7326, time: 5.103, lr: 0.0002
+[2024-04-16 11:18:52,614][pib_utils.py][line:321][INFO] Epoch:000, 22560/64000, loss: 13.6996, time: 5.166, lr: 0.0002
+[2024-04-16 11:18:57,721][pib_utils.py][line:321][INFO] Epoch:000, 22720/64000, loss: 13.6657, time: 5.107, lr: 0.0002
+[2024-04-16 11:19:02,837][pib_utils.py][line:321][INFO] Epoch:000, 22880/64000, loss: 13.6428, time: 5.116, lr: 0.0002
+[2024-04-16 11:19:08,036][pib_utils.py][line:321][INFO] Epoch:000, 23040/64000, loss: 13.6729, time: 5.199, lr: 0.0002
+[2024-04-16 11:19:13,317][pib_utils.py][line:321][INFO] Epoch:000, 23200/64000, loss: 13.6855, time: 5.280, lr: 0.0002
+[2024-04-16 11:19:18,567][pib_utils.py][line:321][INFO] Epoch:000, 23360/64000, loss: 13.6680, time: 5.250, lr: 0.0002
+[2024-04-16 11:19:23,883][pib_utils.py][line:321][INFO] Epoch:000, 23520/64000, loss: 13.6574, time: 5.317, lr: 0.0002
+[2024-04-16 11:19:29,220][pib_utils.py][line:321][INFO] Epoch:000, 23680/64000, loss: 13.6556, time: 5.337, lr: 0.0002
+[2024-04-16 11:19:34,359][pib_utils.py][line:321][INFO] Epoch:000, 23840/64000, loss: 13.6393, time: 5.139, lr: 0.0002
+[2024-04-16 11:19:39,501][pib_utils.py][line:321][INFO] Epoch:000, 24000/64000, loss: 13.6014, time: 5.143, lr: 0.0002
+[2024-04-16 11:19:44,714][pib_utils.py][line:321][INFO] Epoch:000, 24160/64000, loss: 13.5727, time: 5.212, lr: 0.0002
+[2024-04-16 11:19:49,822][pib_utils.py][line:321][INFO] Epoch:000, 24320/64000, loss: 13.5448, time: 5.108, lr: 0.0002
+[2024-04-16 11:19:54,990][pib_utils.py][line:321][INFO] Epoch:000, 24480/64000, loss: 13.5154, time: 5.168, lr: 0.0002
+[2024-04-16 11:20:00,166][pib_utils.py][line:321][INFO] Epoch:000, 24640/64000, loss: 13.5008, time: 5.176, lr: 0.0002
+[2024-04-16 11:20:05,315][pib_utils.py][line:321][INFO] Epoch:000, 24800/64000, loss: 13.4912, time: 5.149, lr: 0.0002
+[2024-04-16 11:20:10,435][pib_utils.py][line:321][INFO] Epoch:000, 24960/64000, loss: 13.4643, time: 5.120, lr: 0.0002
+[2024-04-16 11:20:15,548][pib_utils.py][line:321][INFO] Epoch:000, 25120/64000, loss: 13.4352, time: 5.113, lr: 0.0002
+[2024-04-16 11:20:20,696][pib_utils.py][line:321][INFO] Epoch:000, 25280/64000, loss: 13.4250, time: 5.148, lr: 0.0002
+[2024-04-16 11:20:25,891][pib_utils.py][line:321][INFO] Epoch:000, 25440/64000, loss: 13.4024, time: 5.195, lr: 0.0002
+[2024-04-16 11:20:30,977][pib_utils.py][line:321][INFO] Epoch:000, 25600/64000, loss: 13.3764, time: 5.086, lr: 0.0002
+[2024-04-16 11:20:36,241][pib_utils.py][line:321][INFO] Epoch:000, 25760/64000, loss: 13.3515, time: 5.264, lr: 0.0002
+[2024-04-16 11:20:41,322][pib_utils.py][line:321][INFO] Epoch:000, 25920/64000, loss: 13.3402, time: 5.082, lr: 0.0002
+[2024-04-16 11:20:46,466][pib_utils.py][line:321][INFO] Epoch:000, 26080/64000, loss: 13.3201, time: 5.144, lr: 0.0002
+[2024-04-16 11:20:51,593][pib_utils.py][line:321][INFO] Epoch:000, 26240/64000, loss: 13.2962, time: 5.127, lr: 0.0002
+[2024-04-16 11:20:56,849][pib_utils.py][line:321][INFO] Epoch:000, 26400/64000, loss: 13.2648, time: 5.256, lr: 0.0002
+[2024-04-16 11:21:01,946][pib_utils.py][line:321][INFO] Epoch:000, 26560/64000, loss: 13.2422, time: 5.097, lr: 0.0002
+[2024-04-16 11:21:07,033][pib_utils.py][line:321][INFO] Epoch:000, 26720/64000, loss: 13.2221, time: 5.087, lr: 0.0002
+[2024-04-16 11:21:12,187][pib_utils.py][line:321][INFO] Epoch:000, 26880/64000, loss: 13.1996, time: 5.154, lr: 0.0002
+[2024-04-16 11:21:17,340][pib_utils.py][line:321][INFO] Epoch:000, 27040/64000, loss: 13.1846, time: 5.153, lr: 0.0002
+[2024-04-16 11:21:22,702][pib_utils.py][line:321][INFO] Epoch:000, 27200/64000, loss: 13.1604, time: 5.361, lr: 0.0002
+[2024-04-16 11:21:27,839][pib_utils.py][line:321][INFO] Epoch:000, 27360/64000, loss: 13.1315, time: 5.138, lr: 0.0002
+[2024-04-16 11:21:32,988][pib_utils.py][line:321][INFO] Epoch:000, 27520/64000, loss: 13.1035, time: 5.149, lr: 0.0002
+[2024-04-16 11:21:38,177][pib_utils.py][line:321][INFO] Epoch:000, 27680/64000, loss: 13.0792, time: 5.189, lr: 0.0002
+[2024-04-16 11:21:43,294][pib_utils.py][line:321][INFO] Epoch:000, 27840/64000, loss: 13.0537, time: 5.117, lr: 0.0002
+[2024-04-16 11:21:48,423][pib_utils.py][line:321][INFO] Epoch:000, 28000/64000, loss: 13.0271, time: 5.129, lr: 0.0002
+[2024-04-16 11:21:53,648][pib_utils.py][line:321][INFO] Epoch:000, 28160/64000, loss: 13.0079, time: 5.225, lr: 0.0002
+[2024-04-16 11:21:58,899][pib_utils.py][line:321][INFO] Epoch:000, 28320/64000, loss: 12.9812, time: 5.251, lr: 0.0002
+[2024-04-16 11:22:04,128][pib_utils.py][line:321][INFO] Epoch:000, 28480/64000, loss: 12.9694, time: 5.229, lr: 0.0002
+[2024-04-16 11:22:09,228][pib_utils.py][line:321][INFO] Epoch:000, 28640/64000, loss: 12.9634, time: 5.101, lr: 0.0002
+[2024-04-16 11:22:14,326][pib_utils.py][line:321][INFO] Epoch:000, 28800/64000, loss: 12.9613, time: 5.098, lr: 0.0002
+[2024-04-16 11:22:19,432][pib_utils.py][line:321][INFO] Epoch:000, 28960/64000, loss: 12.9381, time: 5.105, lr: 0.0002
+[2024-04-16 11:22:24,531][pib_utils.py][line:321][INFO] Epoch:000, 29120/64000, loss: 12.9103, time: 5.099, lr: 0.0002
+[2024-04-16 11:22:29,770][pib_utils.py][line:321][INFO] Epoch:000, 29280/64000, loss: 12.8913, time: 5.239, lr: 0.0002
+[2024-04-16 11:22:34,911][pib_utils.py][line:321][INFO] Epoch:000, 29440/64000, loss: 12.8786, time: 5.142, lr: 0.0002
+[2024-04-16 11:22:40,015][pib_utils.py][line:321][INFO] Epoch:000, 29600/64000, loss: 12.8637, time: 5.104, lr: 0.0002
+[2024-04-16 11:22:45,185][pib_utils.py][line:321][INFO] Epoch:000, 29760/64000, loss: 12.8536, time: 5.170, lr: 0.0002
+[2024-04-16 11:22:50,387][pib_utils.py][line:321][INFO] Epoch:000, 29920/64000, loss: 12.8325, time: 5.201, lr: 0.0002
+[2024-04-16 11:22:55,592][pib_utils.py][line:321][INFO] Epoch:000, 30080/64000, loss: 12.8052, time: 5.206, lr: 0.0002
+[2024-04-16 11:23:00,706][pib_utils.py][line:321][INFO] Epoch:000, 30240/64000, loss: 12.7792, time: 5.114, lr: 0.0002
+[2024-04-16 11:23:05,916][pib_utils.py][line:321][INFO] Epoch:000, 30400/64000, loss: 12.7607, time: 5.210, lr: 0.0002
+[2024-04-16 11:23:11,033][pib_utils.py][line:321][INFO] Epoch:000, 30560/64000, loss: 12.7449, time: 5.116, lr: 0.0002
+[2024-04-16 11:23:16,180][pib_utils.py][line:321][INFO] Epoch:000, 30720/64000, loss: 12.7268, time: 5.148, lr: 0.0002
+[2024-04-16 11:23:21,296][pib_utils.py][line:321][INFO] Epoch:000, 30880/64000, loss: 12.7170, time: 5.116, lr: 0.0002
+[2024-04-16 11:23:26,412][pib_utils.py][line:321][INFO] Epoch:000, 31040/64000, loss: 12.7368, time: 5.116, lr: 0.0002
+[2024-04-16 11:23:31,652][pib_utils.py][line:321][INFO] Epoch:000, 31200/64000, loss: 12.7649, time: 5.240, lr: 0.0002
+[2024-04-16 11:23:36,815][pib_utils.py][line:321][INFO] Epoch:000, 31360/64000, loss: 12.7518, time: 5.163, lr: 0.0002
+[2024-04-16 11:23:41,986][pib_utils.py][line:321][INFO] Epoch:000, 31520/64000, loss: 12.7269, time: 5.171, lr: 0.0002
+[2024-04-16 11:23:47,128][pib_utils.py][line:321][INFO] Epoch:000, 31680/64000, loss: 12.7083, time: 5.142, lr: 0.0002
+[2024-04-16 11:23:52,350][pib_utils.py][line:321][INFO] Epoch:000, 31840/64000, loss: 12.6919, time: 5.222, lr: 0.0002
+[2024-04-16 11:23:57,559][pib_utils.py][line:321][INFO] Epoch:000, 32000/64000, loss: 12.6790, time: 5.209, lr: 0.0002
+[2024-04-16 11:24:02,830][pib_utils.py][line:321][INFO] Epoch:000, 32160/64000, loss: 12.6620, time: 5.272, lr: 0.0002
+[2024-04-16 11:24:08,168][pib_utils.py][line:321][INFO] Epoch:000, 32320/64000, loss: 12.6436, time: 5.337, lr: 0.0002
+[2024-04-16 11:24:13,421][pib_utils.py][line:321][INFO] Epoch:000, 32480/64000, loss: 12.6198, time: 5.254, lr: 0.0002
+[2024-04-16 11:24:18,577][pib_utils.py][line:321][INFO] Epoch:000, 32640/64000, loss: 12.6013, time: 5.156, lr: 0.0002
+[2024-04-16 11:24:23,745][pib_utils.py][line:321][INFO] Epoch:000, 32800/64000, loss: 12.5888, time: 5.168, lr: 0.0002
+[2024-04-16 11:24:28,884][pib_utils.py][line:321][INFO] Epoch:000, 32960/64000, loss: 12.5774, time: 5.139, lr: 0.0002
+[2024-04-16 11:24:34,007][pib_utils.py][line:321][INFO] Epoch:000, 33120/64000, loss: 12.5556, time: 5.122, lr: 0.0002
+[2024-04-16 11:24:39,119][pib_utils.py][line:321][INFO] Epoch:000, 33280/64000, loss: 12.5397, time: 5.113, lr: 0.0002
+[2024-04-16 11:24:44,369][pib_utils.py][line:321][INFO] Epoch:000, 33440/64000, loss: 12.5290, time: 5.250, lr: 0.0002
+[2024-04-16 11:24:49,502][pib_utils.py][line:321][INFO] Epoch:000, 33600/64000, loss: 12.5189, time: 5.133, lr: 0.0002
+[2024-04-16 11:24:54,629][pib_utils.py][line:321][INFO] Epoch:000, 33760/64000, loss: 12.5064, time: 5.126, lr: 0.0002
+[2024-04-16 11:24:59,799][pib_utils.py][line:321][INFO] Epoch:000, 33920/64000, loss: 12.4891, time: 5.171, lr: 0.0002
+[2024-04-16 11:25:05,021][pib_utils.py][line:321][INFO] Epoch:000, 34080/64000, loss: 12.4697, time: 5.222, lr: 0.0002
+[2024-04-16 11:25:10,158][pib_utils.py][line:321][INFO] Epoch:000, 34240/64000, loss: 12.4506, time: 5.137, lr: 0.0002
+[2024-04-16 11:25:15,335][pib_utils.py][line:321][INFO] Epoch:000, 34400/64000, loss: 12.4350, time: 5.177, lr: 0.0002
+[2024-04-16 11:25:20,487][pib_utils.py][line:321][INFO] Epoch:000, 34560/64000, loss: 12.4257, time: 5.152, lr: 0.0002
+[2024-04-16 11:25:25,608][pib_utils.py][line:321][INFO] Epoch:000, 34720/64000, loss: 12.4041, time: 5.120, lr: 0.0002
+[2024-04-16 11:25:30,735][pib_utils.py][line:321][INFO] Epoch:000, 34880/64000, loss: 12.3804, time: 5.128, lr: 0.0002
+[2024-04-16 11:25:35,879][pib_utils.py][line:321][INFO] Epoch:000, 35040/64000, loss: 12.3662, time: 5.144, lr: 0.0002
+[2024-04-16 11:25:41,080][pib_utils.py][line:321][INFO] Epoch:000, 35200/64000, loss: 12.3527, time: 5.201, lr: 0.0002
+[2024-04-16 11:25:46,209][pib_utils.py][line:321][INFO] Epoch:000, 35360/64000, loss: 12.3361, time: 5.129, lr: 0.0002
+[2024-04-16 11:25:51,320][pib_utils.py][line:321][INFO] Epoch:000, 35520/64000, loss: 12.3200, time: 5.110, lr: 0.0002
+[2024-04-16 11:25:56,458][pib_utils.py][line:321][INFO] Epoch:000, 35680/64000, loss: 12.3073, time: 5.139, lr: 0.0002
+[2024-04-16 11:26:01,582][pib_utils.py][line:321][INFO] Epoch:000, 35840/64000, loss: 12.2990, time: 5.124, lr: 0.0002
+[2024-04-16 11:26:06,717][pib_utils.py][line:321][INFO] Epoch:000, 36000/64000, loss: 12.2891, time: 5.135, lr: 0.0002
+[2024-04-16 11:26:11,850][pib_utils.py][line:321][INFO] Epoch:000, 36160/64000, loss: 12.2872, time: 5.132, lr: 0.0002
+[2024-04-16 11:26:17,107][pib_utils.py][line:321][INFO] Epoch:000, 36320/64000, loss: 12.2870, time: 5.257, lr: 0.0002
+[2024-04-16 11:26:22,360][pib_utils.py][line:321][INFO] Epoch:000, 36480/64000, loss: 12.2826, time: 5.253, lr: 0.0002
+[2024-04-16 11:26:27,460][pib_utils.py][line:321][INFO] Epoch:000, 36640/64000, loss: 12.2647, time: 5.100, lr: 0.0002
+[2024-04-16 11:26:32,609][pib_utils.py][line:321][INFO] Epoch:000, 36800/64000, loss: 12.2513, time: 5.149, lr: 0.0002
+[2024-04-16 11:26:37,735][pib_utils.py][line:321][INFO] Epoch:000, 36960/64000, loss: 12.2404, time: 5.125, lr: 0.0002
+[2024-04-16 11:26:42,855][pib_utils.py][line:321][INFO] Epoch:000, 37120/64000, loss: 12.2274, time: 5.120, lr: 0.0002
+[2024-04-16 11:26:47,991][pib_utils.py][line:321][INFO] Epoch:000, 37280/64000, loss: 12.2175, time: 5.136, lr: 0.0002
+[2024-04-16 11:26:53,169][pib_utils.py][line:321][INFO] Epoch:000, 37440/64000, loss: 12.2098, time: 5.178, lr: 0.0002
+[2024-04-16 11:26:58,279][pib_utils.py][line:321][INFO] Epoch:000, 37600/64000, loss: 12.1928, time: 5.110, lr: 0.0002
+[2024-04-16 11:27:03,439][pib_utils.py][line:321][INFO] Epoch:000, 37760/64000, loss: 12.1773, time: 5.161, lr: 0.0002
+[2024-04-16 11:27:08,638][pib_utils.py][line:321][INFO] Epoch:000, 37920/64000, loss: 12.1567, time: 5.198, lr: 0.0002
+[2024-04-16 11:27:13,759][pib_utils.py][line:321][INFO] Epoch:000, 38080/64000, loss: 12.1372, time: 5.121, lr: 0.0002
+[2024-04-16 11:27:18,846][pib_utils.py][line:321][INFO] Epoch:000, 38240/64000, loss: 12.1178, time: 5.088, lr: 0.0002
+[2024-04-16 11:27:23,995][pib_utils.py][line:321][INFO] Epoch:000, 38400/64000, loss: 12.1026, time: 5.149, lr: 0.0002
+[2024-04-16 11:27:29,165][pib_utils.py][line:321][INFO] Epoch:000, 38560/64000, loss: 12.0859, time: 5.170, lr: 0.0002
+[2024-04-16 11:27:34,439][pib_utils.py][line:321][INFO] Epoch:000, 38720/64000, loss: 12.0686, time: 5.274, lr: 0.0002
+[2024-04-16 11:27:39,633][pib_utils.py][line:321][INFO] Epoch:000, 38880/64000, loss: 12.0589, time: 5.193, lr: 0.0002
+[2024-04-16 11:27:44,777][pib_utils.py][line:321][INFO] Epoch:000, 39040/64000, loss: 12.0435, time: 5.145, lr: 0.0002
+[2024-04-16 11:27:50,007][pib_utils.py][line:321][INFO] Epoch:000, 39200/64000, loss: 12.0290, time: 5.230, lr: 0.0002
+[2024-04-16 11:27:55,106][pib_utils.py][line:321][INFO] Epoch:000, 39360/64000, loss: 12.0191, time: 5.099, lr: 0.0002
+[2024-04-16 11:28:00,328][pib_utils.py][line:321][INFO] Epoch:000, 39520/64000, loss: 12.0080, time: 5.222, lr: 0.0002
+[2024-04-16 11:28:05,450][pib_utils.py][line:321][INFO] Epoch:000, 39680/64000, loss: 11.9946, time: 5.122, lr: 0.0002
+[2024-04-16 11:28:10,597][pib_utils.py][line:321][INFO] Epoch:000, 39840/64000, loss: 11.9803, time: 5.147, lr: 0.0002
+[2024-04-16 11:28:15,728][pib_utils.py][line:321][INFO] Epoch:000, 40000/64000, loss: 11.9699, time: 5.131, lr: 0.0002
+[2024-04-16 11:28:20,936][pib_utils.py][line:321][INFO] Epoch:000, 40160/64000, loss: 11.9570, time: 5.207, lr: 0.0002
+[2024-04-16 11:28:26,054][pib_utils.py][line:321][INFO] Epoch:000, 40320/64000, loss: 11.9396, time: 5.119, lr: 0.0002
+[2024-04-16 11:28:31,299][pib_utils.py][line:321][INFO] Epoch:000, 40480/64000, loss: 11.9315, time: 5.245, lr: 0.0002
+[2024-04-16 11:28:36,423][pib_utils.py][line:321][INFO] Epoch:000, 40640/64000, loss: 11.9164, time: 5.124, lr: 0.0002
+[2024-04-16 11:28:41,565][pib_utils.py][line:321][INFO] Epoch:000, 40800/64000, loss: 11.9016, time: 5.142, lr: 0.0002
+[2024-04-16 11:28:46,761][pib_utils.py][line:321][INFO] Epoch:000, 40960/64000, loss: 11.8844, time: 5.196, lr: 0.0002
+[2024-04-16 11:28:51,830][pib_utils.py][line:321][INFO] Epoch:000, 41120/64000, loss: 11.8707, time: 5.069, lr: 0.0002
+[2024-04-16 11:28:56,972][pib_utils.py][line:321][INFO] Epoch:000, 41280/64000, loss: 11.8580, time: 5.142, lr: 0.0002
+[2024-04-16 11:29:02,137][pib_utils.py][line:321][INFO] Epoch:000, 41440/64000, loss: 11.8483, time: 5.165, lr: 0.0002
+[2024-04-16 11:29:07,249][pib_utils.py][line:321][INFO] Epoch:000, 41600/64000, loss: 11.8355, time: 5.111, lr: 0.0002
+[2024-04-16 11:29:12,372][pib_utils.py][line:321][INFO] Epoch:000, 41760/64000, loss: 11.8205, time: 5.123, lr: 0.0002
+[2024-04-16 11:29:17,565][pib_utils.py][line:321][INFO] Epoch:000, 41920/64000, loss: 11.8088, time: 5.193, lr: 0.0002
+[2024-04-16 11:29:22,722][pib_utils.py][line:321][INFO] Epoch:000, 42080/64000, loss: 11.7963, time: 5.157, lr: 0.0002
+[2024-04-16 11:29:27,911][pib_utils.py][line:321][INFO] Epoch:000, 42240/64000, loss: 11.7911, time: 5.189, lr: 0.0002
+[2024-04-16 11:29:33,038][pib_utils.py][line:321][INFO] Epoch:000, 42400/64000, loss: 11.7856, time: 5.126, lr: 0.0002
+[2024-04-16 11:29:38,148][pib_utils.py][line:321][INFO] Epoch:000, 42560/64000, loss: 11.7791, time: 5.110, lr: 0.0002
+[2024-04-16 11:29:43,353][pib_utils.py][line:321][INFO] Epoch:000, 42720/64000, loss: 11.7727, time: 5.205, lr: 0.0002
+[2024-04-16 11:29:48,585][pib_utils.py][line:321][INFO] Epoch:000, 42880/64000, loss: 11.7718, time: 5.233, lr: 0.0002
+[2024-04-16 11:29:53,690][pib_utils.py][line:321][INFO] Epoch:000, 43040/64000, loss: 11.7797, time: 5.105, lr: 0.0002
+[2024-04-16 11:29:58,866][pib_utils.py][line:321][INFO] Epoch:000, 43200/64000, loss: 11.7813, time: 5.176, lr: 0.0002
+[2024-04-16 11:30:04,094][pib_utils.py][line:321][INFO] Epoch:000, 43360/64000, loss: 11.7740, time: 5.228, lr: 0.0002
+[2024-04-16 11:30:09,357][pib_utils.py][line:321][INFO] Epoch:000, 43520/64000, loss: 11.7662, time: 5.262, lr: 0.0002
+[2024-04-16 11:30:14,647][pib_utils.py][line:321][INFO] Epoch:000, 43680/64000, loss: 11.7605, time: 5.290, lr: 0.0002
+[2024-04-16 11:30:19,840][pib_utils.py][line:321][INFO] Epoch:000, 43840/64000, loss: 11.7522, time: 5.193, lr: 0.0002
+[2024-04-16 11:30:24,980][pib_utils.py][line:321][INFO] Epoch:000, 44000/64000, loss: 11.7466, time: 5.140, lr: 0.0002
+[2024-04-16 11:30:30,114][pib_utils.py][line:321][INFO] Epoch:000, 44160/64000, loss: 11.7400, time: 5.134, lr: 0.0002
+[2024-04-16 11:30:35,264][pib_utils.py][line:321][INFO] Epoch:000, 44320/64000, loss: 11.7286, time: 5.150, lr: 0.0002
+[2024-04-16 11:30:40,408][pib_utils.py][line:321][INFO] Epoch:000, 44480/64000, loss: 11.7186, time: 5.144, lr: 0.0002
+[2024-04-16 11:30:45,522][pib_utils.py][line:321][INFO] Epoch:000, 44640/64000, loss: 11.7111, time: 5.114, lr: 0.0002
+[2024-04-16 11:30:50,661][pib_utils.py][line:321][INFO] Epoch:000, 44800/64000, loss: 11.7014, time: 5.139, lr: 0.0002
+[2024-04-16 11:30:55,846][pib_utils.py][line:321][INFO] Epoch:000, 44960/64000, loss: 11.6942, time: 5.185, lr: 0.0002
+[2024-04-16 11:31:01,186][pib_utils.py][line:321][INFO] Epoch:000, 45120/64000, loss: 11.6835, time: 5.340, lr: 0.0002
+[2024-04-16 11:31:06,321][pib_utils.py][line:321][INFO] Epoch:000, 45280/64000, loss: 11.6717, time: 5.134, lr: 0.0002
+[2024-04-16 11:31:11,519][pib_utils.py][line:321][INFO] Epoch:000, 45440/64000, loss: 11.6621, time: 5.199, lr: 0.0002
+[2024-04-16 11:31:16,635][pib_utils.py][line:321][INFO] Epoch:000, 45600/64000, loss: 11.6587, time: 5.116, lr: 0.0002
+[2024-04-16 11:31:21,803][pib_utils.py][line:321][INFO] Epoch:000, 45760/64000, loss: 11.6539, time: 5.167, lr: 0.0002
+[2024-04-16 11:31:27,025][pib_utils.py][line:321][INFO] Epoch:000, 45920/64000, loss: 11.6514, time: 5.222, lr: 0.0002
+[2024-04-16 11:31:32,149][pib_utils.py][line:321][INFO] Epoch:000, 46080/64000, loss: 11.6484, time: 5.125, lr: 0.0002
+[2024-04-16 11:31:37,374][pib_utils.py][line:321][INFO] Epoch:000, 46240/64000, loss: 11.6426, time: 5.225, lr: 0.0002
+[2024-04-16 11:31:42,716][pib_utils.py][line:321][INFO] Epoch:000, 46400/64000, loss: 11.6330, time: 5.342, lr: 0.0002
+[2024-04-16 11:31:47,882][pib_utils.py][line:321][INFO] Epoch:000, 46560/64000, loss: 11.6200, time: 5.167, lr: 0.0002
+[2024-04-16 11:31:52,983][pib_utils.py][line:321][INFO] Epoch:000, 46720/64000, loss: 11.6120, time: 5.101, lr: 0.0002
+[2024-04-16 11:31:58,140][pib_utils.py][line:321][INFO] Epoch:000, 46880/64000, loss: 11.6074, time: 5.157, lr: 0.0002
+[2024-04-16 11:32:03,235][pib_utils.py][line:321][INFO] Epoch:000, 47040/64000, loss: 11.6029, time: 5.095, lr: 0.0002
+[2024-04-16 11:32:08,478][pib_utils.py][line:321][INFO] Epoch:000, 47200/64000, loss: 11.6045, time: 5.243, lr: 0.0002
+[2024-04-16 11:32:13,642][pib_utils.py][line:321][INFO] Epoch:000, 47360/64000, loss: 11.5978, time: 5.164, lr: 0.0002
+[2024-04-16 11:32:18,910][pib_utils.py][line:321][INFO] Epoch:000, 47520/64000, loss: 11.5937, time: 5.268, lr: 0.0002
+[2024-04-16 11:32:24,029][pib_utils.py][line:321][INFO] Epoch:000, 47680/64000, loss: 11.5826, time: 5.119, lr: 0.0002
+[2024-04-16 11:32:29,264][pib_utils.py][line:321][INFO] Epoch:000, 47840/64000, loss: 11.5801, time: 5.236, lr: 0.0002
+[2024-04-16 11:32:34,559][pib_utils.py][line:321][INFO] Epoch:000, 48000/64000, loss: 11.5730, time: 5.294, lr: 0.0002
+[2024-04-16 11:32:39,692][pib_utils.py][line:321][INFO] Epoch:000, 48160/64000, loss: 11.5671, time: 5.134, lr: 0.0002
+[2024-04-16 11:32:44,840][pib_utils.py][line:321][INFO] Epoch:000, 48320/64000, loss: 11.5606, time: 5.148, lr: 0.0002
+[2024-04-16 11:32:49,941][pib_utils.py][line:321][INFO] Epoch:000, 48480/64000, loss: 11.5496, time: 5.101, lr: 0.0002
+[2024-04-16 11:32:55,102][pib_utils.py][line:321][INFO] Epoch:000, 48640/64000, loss: 11.5389, time: 5.162, lr: 0.0002
+[2024-04-16 11:33:00,226][pib_utils.py][line:321][INFO] Epoch:000, 48800/64000, loss: 11.5270, time: 5.124, lr: 0.0002
+[2024-04-16 11:33:05,449][pib_utils.py][line:321][INFO] Epoch:000, 48960/64000, loss: 11.5131, time: 5.223, lr: 0.0002
+[2024-04-16 11:33:10,564][pib_utils.py][line:321][INFO] Epoch:000, 49120/64000, loss: 11.5016, time: 5.116, lr: 0.0002
+[2024-04-16 11:33:15,699][pib_utils.py][line:321][INFO] Epoch:000, 49280/64000, loss: 11.4911, time: 5.135, lr: 0.0002
+[2024-04-16 11:33:20,867][pib_utils.py][line:321][INFO] Epoch:000, 49440/64000, loss: 11.4816, time: 5.168, lr: 0.0002
+[2024-04-16 11:33:26,080][pib_utils.py][line:321][INFO] Epoch:000, 49600/64000, loss: 11.4678, time: 5.213, lr: 0.0002
+[2024-04-16 11:33:31,187][pib_utils.py][line:321][INFO] Epoch:000, 49760/64000, loss: 11.4562, time: 5.107, lr: 0.0002
+[2024-04-16 11:33:36,336][pib_utils.py][line:321][INFO] Epoch:000, 49920/64000, loss: 11.4449, time: 5.149, lr: 0.0002
+[2024-04-16 11:33:41,468][pib_utils.py][line:321][INFO] Epoch:000, 50080/64000, loss: 11.4349, time: 5.132, lr: 0.0002
+[2024-04-16 11:33:46,561][pib_utils.py][line:321][INFO] Epoch:000, 50240/64000, loss: 11.4238, time: 5.093, lr: 0.0002
+[2024-04-16 11:33:51,798][pib_utils.py][line:321][INFO] Epoch:000, 50400/64000, loss: 11.4167, time: 5.237, lr: 0.0002
+[2024-04-16 11:33:56,960][pib_utils.py][line:321][INFO] Epoch:000, 50560/64000, loss: 11.4055, time: 5.162, lr: 0.0002
+[2024-04-16 11:34:02,209][pib_utils.py][line:321][INFO] Epoch:000, 50720/64000, loss: 11.3926, time: 5.249, lr: 0.0002
+[2024-04-16 11:34:07,364][pib_utils.py][line:321][INFO] Epoch:000, 50880/64000, loss: 11.3877, time: 5.156, lr: 0.0002
+[2024-04-16 11:34:12,511][pib_utils.py][line:321][INFO] Epoch:000, 51040/64000, loss: 11.3843, time: 5.147, lr: 0.0002
+[2024-04-16 11:34:17,723][pib_utils.py][line:321][INFO] Epoch:000, 51200/64000, loss: 11.3784, time: 5.213, lr: 0.0002
+[2024-04-16 11:34:22,905][pib_utils.py][line:321][INFO] Epoch:000, 51360/64000, loss: 11.3814, time: 5.181, lr: 0.0002
+[2024-04-16 11:34:28,025][pib_utils.py][line:321][INFO] Epoch:000, 51520/64000, loss: 11.3812, time: 5.121, lr: 0.0002
+[2024-04-16 11:34:33,164][pib_utils.py][line:321][INFO] Epoch:000, 51680/64000, loss: 11.3769, time: 5.139, lr: 0.0002
+[2024-04-16 11:34:38,300][pib_utils.py][line:321][INFO] Epoch:000, 51840/64000, loss: 11.3630, time: 5.135, lr: 0.0002
+[2024-04-16 11:34:43,427][pib_utils.py][line:321][INFO] Epoch:000, 52000/64000, loss: 11.3528, time: 5.127, lr: 0.0002
+[2024-04-16 11:34:48,650][pib_utils.py][line:321][INFO] Epoch:000, 52160/64000, loss: 11.3447, time: 5.223, lr: 0.0002
+[2024-04-16 11:34:53,763][pib_utils.py][line:321][INFO] Epoch:000, 52320/64000, loss: 11.3373, time: 5.113, lr: 0.0002
+[2024-04-16 11:34:58,864][pib_utils.py][line:321][INFO] Epoch:000, 52480/64000, loss: 11.3302, time: 5.101, lr: 0.0002
+[2024-04-16 11:35:04,107][pib_utils.py][line:321][INFO] Epoch:000, 52640/64000, loss: 11.3227, time: 5.243, lr: 0.0002
+[2024-04-16 11:35:09,213][pib_utils.py][line:321][INFO] Epoch:000, 52800/64000, loss: 11.3168, time: 5.106, lr: 0.0002
+[2024-04-16 11:35:14,375][pib_utils.py][line:321][INFO] Epoch:000, 52960/64000, loss: 11.3184, time: 5.162, lr: 0.0002
+[2024-04-16 11:35:19,491][pib_utils.py][line:321][INFO] Epoch:000, 53120/64000, loss: 11.3167, time: 5.116, lr: 0.0002
+[2024-04-16 11:35:24,623][pib_utils.py][line:321][INFO] Epoch:000, 53280/64000, loss: 11.3115, time: 5.132, lr: 0.0002
+[2024-04-16 11:35:29,815][pib_utils.py][line:321][INFO] Epoch:000, 53440/64000, loss: 11.3063, time: 5.191, lr: 0.0002
+[2024-04-16 11:35:34,928][pib_utils.py][line:321][INFO] Epoch:000, 53600/64000, loss: 11.2946, time: 5.113, lr: 0.0002
+[2024-04-16 11:35:40,031][pib_utils.py][line:321][INFO] Epoch:000, 53760/64000, loss: 11.2841, time: 5.103, lr: 0.0002
+[2024-04-16 11:35:45,158][pib_utils.py][line:321][INFO] Epoch:000, 53920/64000, loss: 11.2729, time: 5.127, lr: 0.0002
+[2024-04-16 11:35:50,260][pib_utils.py][line:321][INFO] Epoch:000, 54080/64000, loss: 11.2629, time: 5.102, lr: 0.0002
+[2024-04-16 11:35:55,401][pib_utils.py][line:321][INFO] Epoch:000, 54240/64000, loss: 11.2546, time: 5.140, lr: 0.0002
+[2024-04-16 11:36:00,514][pib_utils.py][line:321][INFO] Epoch:000, 54400/64000, loss: 11.2460, time: 5.113, lr: 0.0002
+[2024-04-16 11:36:05,637][pib_utils.py][line:321][INFO] Epoch:000, 54560/64000, loss: 11.2354, time: 5.123, lr: 0.0002
+[2024-04-16 11:36:10,899][pib_utils.py][line:321][INFO] Epoch:000, 54720/64000, loss: 11.2254, time: 5.262, lr: 0.0002
+[2024-04-16 11:36:16,128][pib_utils.py][line:321][INFO] Epoch:000, 54880/64000, loss: 11.2153, time: 5.229, lr: 0.0002
+[2024-04-16 11:36:21,308][pib_utils.py][line:321][INFO] Epoch:000, 55040/64000, loss: 11.2059, time: 5.180, lr: 0.0002
+[2024-04-16 11:36:26,473][pib_utils.py][line:321][INFO] Epoch:000, 55200/64000, loss: 11.1971, time: 5.165, lr: 0.0002
+[2024-04-16 11:36:31,697][pib_utils.py][line:321][INFO] Epoch:000, 55360/64000, loss: 11.1874, time: 5.224, lr: 0.0002
+[2024-04-16 11:36:36,961][pib_utils.py][line:321][INFO] Epoch:000, 55520/64000, loss: 11.1770, time: 5.263, lr: 0.0002
+[2024-04-16 11:36:42,304][pib_utils.py][line:321][INFO] Epoch:000, 55680/64000, loss: 11.1696, time: 5.343, lr: 0.0002
+[2024-04-16 11:36:47,392][pib_utils.py][line:321][INFO] Epoch:000, 55840/64000, loss: 11.1594, time: 5.088, lr: 0.0002
+[2024-04-16 11:36:52,628][pib_utils.py][line:321][INFO] Epoch:000, 56000/64000, loss: 11.1530, time: 5.236, lr: 0.0002
+[2024-04-16 11:36:57,748][pib_utils.py][line:321][INFO] Epoch:000, 56160/64000, loss: 11.1468, time: 5.120, lr: 0.0002
+[2024-04-16 11:37:02,936][pib_utils.py][line:321][INFO] Epoch:000, 56320/64000, loss: 11.1434, time: 5.189, lr: 0.0002
+[2024-04-16 11:37:08,043][pib_utils.py][line:321][INFO] Epoch:000, 56480/64000, loss: 11.1351, time: 5.107, lr: 0.0002
+[2024-04-16 11:37:13,236][pib_utils.py][line:321][INFO] Epoch:000, 56640/64000, loss: 11.1243, time: 5.193, lr: 0.0002
+[2024-04-16 11:37:18,373][pib_utils.py][line:321][INFO] Epoch:000, 56800/64000, loss: 11.1170, time: 5.137, lr: 0.0002
+[2024-04-16 11:37:23,545][pib_utils.py][line:321][INFO] Epoch:000, 56960/64000, loss: 11.1158, time: 5.172, lr: 0.0002
+[2024-04-16 11:37:28,896][pib_utils.py][line:321][INFO] Epoch:000, 57120/64000, loss: 11.1133, time: 5.351, lr: 0.0002
+[2024-04-16 11:37:34,139][pib_utils.py][line:321][INFO] Epoch:000, 57280/64000, loss: 11.1149, time: 5.243, lr: 0.0002
+[2024-04-16 11:37:39,410][pib_utils.py][line:321][INFO] Epoch:000, 57440/64000, loss: 11.1217, time: 5.271, lr: 0.0002
+[2024-04-16 11:37:44,557][pib_utils.py][line:321][INFO] Epoch:000, 57600/64000, loss: 11.1224, time: 5.147, lr: 0.0002
+[2024-04-16 11:37:49,741][pib_utils.py][line:321][INFO] Epoch:000, 57760/64000, loss: 11.1197, time: 5.184, lr: 0.0002
+[2024-04-16 11:37:55,020][pib_utils.py][line:321][INFO] Epoch:000, 57920/64000, loss: 11.1137, time: 5.280, lr: 0.0002
+[2024-04-16 11:38:00,133][pib_utils.py][line:321][INFO] Epoch:000, 58080/64000, loss: 11.1059, time: 5.112, lr: 0.0002
+[2024-04-16 11:38:05,430][pib_utils.py][line:321][INFO] Epoch:000, 58240/64000, loss: 11.0987, time: 5.298, lr: 0.0002
+[2024-04-16 11:38:10,579][pib_utils.py][line:321][INFO] Epoch:000, 58400/64000, loss: 11.0931, time: 5.149, lr: 0.0002
+[2024-04-16 11:38:15,703][pib_utils.py][line:321][INFO] Epoch:000, 58560/64000, loss: 11.0912, time: 5.124, lr: 0.0002
+[2024-04-16 11:38:20,865][pib_utils.py][line:321][INFO] Epoch:000, 58720/64000, loss: 11.0903, time: 5.162, lr: 0.0002
+[2024-04-16 11:38:26,243][pib_utils.py][line:321][INFO] Epoch:000, 58880/64000, loss: 11.0842, time: 5.378, lr: 0.0002
+[2024-04-16 11:38:31,397][pib_utils.py][line:321][INFO] Epoch:000, 59040/64000, loss: 11.0740, time: 5.154, lr: 0.0002
+[2024-04-16 11:38:36,532][pib_utils.py][line:321][INFO] Epoch:000, 59200/64000, loss: 11.0643, time: 5.135, lr: 0.0002
+[2024-04-16 11:38:41,783][pib_utils.py][line:321][INFO] Epoch:000, 59360/64000, loss: 11.0581, time: 5.251, lr: 0.0002
+[2024-04-16 11:38:47,148][pib_utils.py][line:321][INFO] Epoch:000, 59520/64000, loss: 11.0549, time: 5.365, lr: 0.0002
+[2024-04-16 11:38:52,353][pib_utils.py][line:321][INFO] Epoch:000, 59680/64000, loss: 11.0521, time: 5.205, lr: 0.0002
+[2024-04-16 11:38:57,504][pib_utils.py][line:321][INFO] Epoch:000, 59840/64000, loss: 11.0429, time: 5.151, lr: 0.0002
+[2024-04-16 11:39:02,678][pib_utils.py][line:321][INFO] Epoch:000, 60000/64000, loss: 11.0331, time: 5.175, lr: 0.0002
+[2024-04-16 11:39:07,951][pib_utils.py][line:321][INFO] Epoch:000, 60160/64000, loss: 11.0227, time: 5.273, lr: 0.0002
+[2024-04-16 11:39:13,067][pib_utils.py][line:321][INFO] Epoch:000, 60320/64000, loss: 11.0139, time: 5.116, lr: 0.0002
+[2024-04-16 11:39:18,141][pib_utils.py][line:321][INFO] Epoch:000, 60480/64000, loss: 11.0049, time: 5.074, lr: 0.0002
+[2024-04-16 11:39:23,327][pib_utils.py][line:321][INFO] Epoch:000, 60640/64000, loss: 10.9985, time: 5.186, lr: 0.0002
+[2024-04-16 11:39:28,519][pib_utils.py][line:321][INFO] Epoch:000, 60800/64000, loss: 10.9942, time: 5.192, lr: 0.0002
+[2024-04-16 11:39:33,902][pib_utils.py][line:321][INFO] Epoch:000, 60960/64000, loss: 10.9925, time: 5.382, lr: 0.0002
+[2024-04-16 11:39:39,168][pib_utils.py][line:321][INFO] Epoch:000, 61120/64000, loss: 10.9989, time: 5.267, lr: 0.0002
+[2024-04-16 11:39:44,251][pib_utils.py][line:321][INFO] Epoch:000, 61280/64000, loss: 11.0171, time: 5.083, lr: 0.0002
+[2024-04-16 11:39:49,406][pib_utils.py][line:321][INFO] Epoch:000, 61440/64000, loss: 11.0200, time: 5.154, lr: 0.0002
+[2024-04-16 11:39:54,560][pib_utils.py][line:321][INFO] Epoch:000, 61600/64000, loss: 11.0182, time: 5.154, lr: 0.0002
+[2024-04-16 11:39:59,826][pib_utils.py][line:321][INFO] Epoch:000, 61760/64000, loss: 11.0118, time: 5.266, lr: 0.0002
+[2024-04-16 11:40:05,165][pib_utils.py][line:321][INFO] Epoch:000, 61920/64000, loss: 11.0051, time: 5.339, lr: 0.0002
+[2024-04-16 11:40:10,441][pib_utils.py][line:321][INFO] Epoch:000, 62080/64000, loss: 10.9959, time: 5.276, lr: 0.0002
+[2024-04-16 11:40:15,670][pib_utils.py][line:321][INFO] Epoch:000, 62240/64000, loss: 10.9896, time: 5.229, lr: 0.0002
+[2024-04-16 11:40:20,876][pib_utils.py][line:321][INFO] Epoch:000, 62400/64000, loss: 10.9834, time: 5.207, lr: 0.0002
+[2024-04-16 11:40:26,043][pib_utils.py][line:321][INFO] Epoch:000, 62560/64000, loss: 10.9797, time: 5.166, lr: 0.0002
+[2024-04-16 11:40:31,290][pib_utils.py][line:321][INFO] Epoch:000, 62720/64000, loss: 10.9750, time: 5.247, lr: 0.0002
+[2024-04-16 11:40:36,609][pib_utils.py][line:321][INFO] Epoch:000, 62880/64000, loss: 10.9700, time: 5.318, lr: 0.0002
+[2024-04-16 11:40:41,760][pib_utils.py][line:321][INFO] Epoch:000, 63040/64000, loss: 10.9662, time: 5.152, lr: 0.0002
+[2024-04-16 11:40:46,963][pib_utils.py][line:321][INFO] Epoch:000, 63200/64000, loss: 10.9591, time: 5.203, lr: 0.0002
+[2024-04-16 11:40:52,046][pib_utils.py][line:321][INFO] Epoch:000, 63360/64000, loss: 10.9523, time: 5.082, lr: 0.0002
+[2024-04-16 11:40:57,293][pib_utils.py][line:321][INFO] Epoch:000, 63520/64000, loss: 10.9439, time: 5.248, lr: 0.0002
+[2024-04-16 11:41:02,395][pib_utils.py][line:321][INFO] Epoch:000, 63680/64000, loss: 10.9382, time: 5.102, lr: 0.0002
+[2024-04-16 11:41:07,506][pib_utils.py][line:321][INFO] Epoch:000, 63840/64000, loss: 10.9335, time: 5.111, lr: 0.0002
+[2024-04-16 11:41:12,758][pib_utils.py][line:321][INFO] Epoch:000, 64000/64000, loss: 10.9243, time: 5.252, lr: 0.0002
+[2024-04-16 11:41:41,882][pib_utils.py][line:335][INFO] epoch: 0, info: {'conv1.weight': tensor(0.0001, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb1.conv1.weight': tensor(5.1911e-10, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb1.conv2.weight': tensor(1.9033e-09, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb1.conv3.weight': tensor(8.7440e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb1.conv4.weight': tensor(3.4367e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb1.conv5.weight': tensor(6.6156e-09, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb2.conv1.weight': tensor(2.1561e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb2.conv2.weight': tensor(2.2922e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb2.conv3.weight': tensor(8.7983e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb2.conv4.weight': tensor(9.9031e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb2.conv5.weight': tensor(2.7970e-10, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb3.conv1.weight': tensor(4.9590e-15, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb3.conv2.weight': tensor(5.9667e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb3.conv3.weight': tensor(4.0888e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb3.conv4.weight': tensor(1.7038e-09, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.0.rdb3.conv5.weight': tensor(2.9036e-08, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb1.conv1.weight': tensor(2.1399e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb1.conv2.weight': tensor(7.6261e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb1.conv3.weight': tensor(8.5212e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb1.conv4.weight': tensor(9.2533e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb1.conv5.weight': tensor(3.7488e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb2.conv1.weight': tensor(8.1648e-10, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb2.conv2.weight': tensor(7.4192e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb2.conv3.weight': tensor(2.8404e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb2.conv4.weight': tensor(2.8782e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb2.conv5.weight': tensor(7.8740e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb3.conv1.weight': tensor(5.6720e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb3.conv2.weight': tensor(5.2982e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb3.conv3.weight': tensor(3.1033e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb3.conv4.weight': tensor(3.3092e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.1.rdb3.conv5.weight': tensor(1.6714e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb1.conv1.weight': tensor(6.5001e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb1.conv2.weight': tensor(1.9113e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb1.conv3.weight': tensor(3.7116e-15, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb1.conv4.weight': tensor(6.1157e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb1.conv5.weight': tensor(1.0227e-10, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb2.conv1.weight': tensor(2.4872e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb2.conv2.weight': tensor(3.3891e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb2.conv3.weight': tensor(3.1858e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb2.conv4.weight': tensor(2.0497e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb2.conv5.weight': tensor(8.0134e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb3.conv1.weight': tensor(9.9143e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb3.conv2.weight': tensor(3.8205e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb3.conv3.weight': tensor(1.6253e-14, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb3.conv4.weight': tensor(6.1844e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.2.rdb3.conv5.weight': tensor(2.4652e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb1.conv1.weight': tensor(4.6244e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb1.conv2.weight': tensor(5.5698e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb1.conv3.weight': tensor(1.2939e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb1.conv4.weight': tensor(1.7827e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb1.conv5.weight': tensor(5.0081e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb2.conv1.weight': tensor(1.5160e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb2.conv2.weight': tensor(2.3261e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb2.conv3.weight': tensor(1.8082e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb2.conv4.weight': tensor(1.3196e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb2.conv5.weight': tensor(1.5122e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb3.conv1.weight': tensor(1.8633e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb3.conv2.weight': tensor(1.1648e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb3.conv3.weight': tensor(1.3043e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb3.conv4.weight': tensor(6.2576e-15, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.3.rdb3.conv5.weight': tensor(1.2272e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb1.conv1.weight': tensor(1.5206e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb1.conv2.weight': tensor(1.5875e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb1.conv3.weight': tensor(8.0733e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb1.conv4.weight': tensor(6.1853e-15, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb1.conv5.weight': tensor(1.0486e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb2.conv1.weight': tensor(9.5904e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb2.conv2.weight': tensor(1.0121e-15, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb2.conv3.weight': tensor(2.4156e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb2.conv4.weight': tensor(1.0433e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb2.conv5.weight': tensor(5.2622e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb3.conv1.weight': tensor(6.8304e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb3.conv2.weight': tensor(6.9860e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb3.conv3.weight': tensor(6.3344e-15, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb3.conv4.weight': tensor(8.8048e-14, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.4.rdb3.conv5.weight': tensor(8.3061e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb1.conv1.weight': tensor(6.4030e-15, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb1.conv2.weight': tensor(6.8001e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb1.conv3.weight': tensor(3.4187e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb1.conv4.weight': tensor(1.4402e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb1.conv5.weight': tensor(4.0095e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb2.conv1.weight': tensor(7.0180e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb2.conv2.weight': tensor(1.2491e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb2.conv3.weight': tensor(8.1246e-14, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb2.conv4.weight': tensor(1.1866e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb2.conv5.weight': tensor(8.1504e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb3.conv1.weight': tensor(3.3856e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb3.conv2.weight': tensor(4.9716e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb3.conv3.weight': tensor(1.4354e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb3.conv4.weight': tensor(1.8876e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.5.rdb3.conv5.weight': tensor(6.7065e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb1.conv1.weight': tensor(1.0387e-14, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb1.conv2.weight': tensor(7.0142e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb1.conv3.weight': tensor(1.4171e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb1.conv4.weight': tensor(3.7764e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb1.conv5.weight': tensor(4.1979e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb2.conv1.weight': tensor(8.9478e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb2.conv2.weight': tensor(4.5717e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb2.conv3.weight': tensor(3.5030e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb2.conv4.weight': tensor(1.4652e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb2.conv5.weight': tensor(8.3993e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb3.conv1.weight': tensor(8.3959e-14, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb3.conv2.weight': tensor(1.6404e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb3.conv3.weight': tensor(4.0493e-14, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb3.conv4.weight': tensor(3.2667e-14, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.6.rdb3.conv5.weight': tensor(1.2430e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb1.conv1.weight': tensor(6.5484e-14, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb1.conv2.weight': tensor(8.1672e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb1.conv3.weight': tensor(1.0264e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb1.conv4.weight': tensor(5.1444e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb1.conv5.weight': tensor(2.1889e-14, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb2.conv1.weight': tensor(5.7446e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb2.conv2.weight': tensor(1.0672e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb2.conv3.weight': tensor(8.1533e-14, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb2.conv4.weight': tensor(3.5163e-15, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb2.conv5.weight': tensor(4.6043e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb3.conv1.weight': tensor(1.8726e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb3.conv2.weight': tensor(3.0930e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb3.conv3.weight': tensor(2.5974e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb3.conv4.weight': tensor(1.2894e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.7.rdb3.conv5.weight': tensor(9.2258e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb1.conv1.weight': tensor(1.4042e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb1.conv2.weight': tensor(1.3412e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb1.conv3.weight': tensor(7.3604e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb1.conv4.weight': tensor(8.7597e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb1.conv5.weight': tensor(1.4281e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb2.conv1.weight': tensor(1.6727e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb2.conv2.weight': tensor(3.6936e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb2.conv3.weight': tensor(1.2539e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb2.conv4.weight': tensor(5.7921e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb2.conv5.weight': tensor(1.6508e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb3.conv1.weight': tensor(3.3761e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb3.conv2.weight': tensor(2.9965e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb3.conv3.weight': tensor(5.2140e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb3.conv4.weight': tensor(3.6073e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.8.rdb3.conv5.weight': tensor(1.2591e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb1.conv1.weight': tensor(1.5730e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb1.conv2.weight': tensor(4.9362e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb1.conv3.weight': tensor(2.1892e-14, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb1.conv4.weight': tensor(1.3741e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb1.conv5.weight': tensor(3.1717e-10, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb2.conv1.weight': tensor(1.6218e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb2.conv2.weight': tensor(7.8229e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb2.conv3.weight': tensor(1.7723e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb2.conv4.weight': tensor(6.6490e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb2.conv5.weight': tensor(1.0242e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb3.conv1.weight': tensor(3.9903e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb3.conv2.weight': tensor(1.6308e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb3.conv3.weight': tensor(5.0247e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb3.conv4.weight': tensor(1.1513e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.9.rdb3.conv5.weight': tensor(2.2262e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb1.conv1.weight': tensor(1.5015e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb1.conv2.weight': tensor(3.2023e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb1.conv3.weight': tensor(2.4537e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb1.conv4.weight': tensor(7.2790e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb1.conv5.weight': tensor(9.9582e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb2.conv1.weight': tensor(1.0432e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb2.conv2.weight': tensor(1.8149e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb2.conv3.weight': tensor(3.1833e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb2.conv4.weight': tensor(2.7187e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb2.conv5.weight': tensor(1.8842e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb3.conv1.weight': tensor(1.8318e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb3.conv2.weight': tensor(1.7627e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb3.conv3.weight': tensor(2.5447e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb3.conv4.weight': tensor(1.5433e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.10.rdb3.conv5.weight': tensor(2.2958e-10, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb1.conv1.weight': tensor(8.0749e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb1.conv2.weight': tensor(2.5437e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb1.conv3.weight': tensor(2.9824e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb1.conv4.weight': tensor(3.2200e-14, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb1.conv5.weight': tensor(9.6863e-11, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb2.conv1.weight': tensor(3.6935e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb2.conv2.weight': tensor(1.1223e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb2.conv3.weight': tensor(1.9609e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb2.conv4.weight': tensor(3.3496e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb2.conv5.weight': tensor(1.9747e-10, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb3.conv1.weight': tensor(1.6320e-12, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb3.conv2.weight': tensor(4.7323e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb3.conv3.weight': tensor(1.8553e-10, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb3.conv4.weight': tensor(1.9679e-13, device='cuda:0', grad_fn=<PowBackward0>), 'trunk.11.rdb3.conv5.weight': tensor(1.4074e-09, device='cuda:0', grad_fn=<PowBackward0>), 'conv2.weight': tensor(2.0851e-06, device='cuda:0', grad_fn=<PowBackward0>), 'upsampling.0.weight': tensor(0.0013, device='cuda:0', grad_fn=<PowBackward0>), 'conv3.0.weight': tensor(0.0003, device='cuda:0', grad_fn=<PowBackward0>), 'conv4.weight': tensor(0.0003, device='cuda:0', grad_fn=<PowBackward0>)}
+[2024-04-16 11:41:41,883][pib_utils.py][line:337][INFO] epoch: 0, tr loss: 10.92431090092659, lr: 0.0002, e_decay: 0.0019437427399680018
+[2024-04-16 11:51:51,043][pib_utils.py][line:401][INFO] loader: set5, psnr/ssim: 31.92/0.8947
+[2024-04-16 11:51:57,400][pib_utils.py][line:401][INFO] loader: set14, psnr/ssim: 27.69/0.7738
+[2024-04-16 11:51:58,628][pib_utils.py][line:401][INFO] loader: b100, psnr/ssim: 26.63/0.6967
